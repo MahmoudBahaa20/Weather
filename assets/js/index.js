@@ -55,9 +55,11 @@ function displayNextDay(data){
 
 async function startApp(city="cairo"){
     let weatherResponse= await getData(city);
-    
-        displayToday(weatherResponse)
+    if(!weatherResponse.error){
+         displayToday(weatherResponse)
 displayNextDay(weatherResponse)
+    }
+       
     
 
 }
