@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+        <nav class="navbar navbar-expand-lg ">
+  <div class="container py-5 d-flex justify-content-between align-items-center">
+   <div class="d-flex justify-content-center align-items-center gap-3">
+    <img src="./assets/img/logo.png" alt="image logo">
+    <div>
+         <a class="navbar-brand" href="#">Weather</a>
+     <p>tagline goes here</p>
+    </div>
+   </div>
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars text-white icon"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 gap-4">
+        <li class="nav-item ">
+          <a class="nav-link active " aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Live Cameras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacts</a>
+        </li>
+        
+        
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+   
+
+<main >
+    <section class="weather  ">
+        <div class="container py-5 ">
+<form  class="py-5 d-flex justify-content-center align-items-center position-relative">
+    <input type="search" class="form-control text-white inputSearch" placeholder="Find Your Location...">
+   <button >Find</button>
+</form>
+<div class="row ">
+    <div class="col-md-4 card mb-4 ">
+    <div class="carda d-flex justify-content-between align-items-center mb-3 py-2">
+        <span class="day"></span>
+       <div class="d-flex justify-content-center align-items-center">
+         <span class="DayNumber"> </span>
+        <span class="Monthweather"></span>
+       </div>
+    </div>
+    <span class="mt-4 weatherlocation ps-2"></span>
+  <div class="d-flex justify-content-start gap-3">
+   
+      <p class="ps-2 weathertempature text-white"></p>
+       <img  src="./assets/img/113.webp" class="w-50 weatherimg" alt="image">
+  </div> 
+    <span class="ps-2 weatherstatus c-1"></span>
+    <div class="d-flex justify-content-start align-items-center mt-3 ps-2 gap-3">
+        <div>
+            <img src="./assets/img/icon-umberella.png" alt="img1">
+            <span class="weatherdegree"></span>
+        </div>
+        <div>
+            <img src="./assets/img/icon-wind.png" alt="img2">
+            <span class="weatherdirection"></span>
+        </div>
+        <div>
+            <img src="./assets/img/icon-compass.png" alt="img3">
+            <span class="weatherdi"></span>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 card  card-1 mb-4 ">
+    <div class="carda text-center mb-3 py-2">
+        <span class="nextday"></span>
+        
+    </div>
+  <div class="d-flex flex-column justify-content-center align-items-center">
+      <img src="./assets/img/113.webp" class="w-25 nextimg" alt="image">
+  <div class="d-flex flex-column justify-content-center align-items-center">
+      <p class="ps-2 weathers text-white nextmax"></p>
+      <p class="weatherss nextmin"></p>
+  </div> 
+    <span class="ps-2 c-1 nextstatus"></span>
+  </div>
+    
+</div>
+<div class="col-md-4 card  card-2 mb-4 ">
+    <div class="carda text-center mb-3 py-2">
+        <span class="nextday"></span>
+        
+    </div>
+  <div class="d-flex flex-column justify-content-center align-items-center">
+      <img src="./assets/img/113.webp" class="w-25 nextimg" alt="image">
+  <div class="d-flex flex-column justify-content-center align-items-center">
+      <p class="ps-2 weathers text-white nextmax"></p>
+      <p class="weatherss nextmin"></p>
+  </div> 
+    <span class="ps-2 c-1 nextstatus"></span>
+  </div>
+    
+</div>
+
+</div>
+ 
+        </div>
+    </section>
+   
+</main>
+
+
+<footer class="vh-50  d-flex justify-content-center align-items-center">
+  <div class="container">
+    <div class="row ">
+        <div class="col-md-7 py-4">
+            <form class="position-relative d-flex justify-content-center align-items-center">
+                <input type="search" class="form-control search " placeholder="Enter your email to subscribe">
+                <button>Subscribe</button>
+            </form>
+        </div>
+        <div class="col-md-5 py-4">
+            <ul class="list-unstyled d-flex justify-content-center align-items-center gap-3">
+                <li class="d-flex justify-content-center align-items-center rounded-circle fs-5">
+                    <i class="fa-brands fa-facebook"></i>
+                </li>
+                <li class="d-flex justify-content-center align-items-center rounded-circle fs-5">
+                    <i class="fa-brands fa-twitter"></i>
+                </li>
+                <li class="d-flex justify-content-center align-items-center rounded-circle fs-5">
+                    <i class="fa-brands fa-google-plus"></i>
+                </li>
+                <li class="d-flex justify-content-center align-items-center rounded-circle fs-5">
+                   <i class="fa-brands fa-pinterest"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p>Copyright 2025  Designed by Mahmoud Bahaa. All rights reserved</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
