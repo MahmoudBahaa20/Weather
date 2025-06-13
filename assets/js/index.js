@@ -20,7 +20,7 @@ let links=document.querySelectorAll("nav ul li")
 
 
 async function getData(cityName){
-    let response=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=774028c5893b4a06933182752251306&q=${cityName}&days=3`);
+    let response=await fetch(`https://api.weatherapi.com/v1/forecast.json?key=774028c5893b4a06933182752251306&q=${cityName}&days=3`);
     let weatherData=await response.json();
 return weatherData
 }
