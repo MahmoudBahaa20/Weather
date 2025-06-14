@@ -31,7 +31,7 @@ dayNumber.innerHTML=today.getDate();
 monthWeather.innerHTML=today.toLocaleDateString("en-us",{month:"long"})
 
 weatherLocation.innerHTML=data.location.name;
-weatherTempature.innerHTML=data.current.temp_c;
+weatherTempature.innerHTML=data.current.temp_c + "°C";
 weatherImg.setAttribute("src",data.current.condition.icon);
 weatherStatus.innerHTML=data.current.condition.text;
 weatherDegree.innerHTML=data.current.humidity + "%";
@@ -45,8 +45,8 @@ function displayNextDay(data){
   for(let i=0 ; i<2 ; i++){
     let nextDate=new Date(forecastData[i+1].date);
     nextDay[i].innerHTML=nextDate.toLocaleDateString("en-us",{weekday:"long"});
-    nextMax[i].innerHTML=forecastData[i+1].day.maxtemp_c;
-    nextMin[i].innerHTML=forecastData[i+1].day.mintemp_c;
+    nextMax[i].innerHTML=forecastData[i+1].day.maxtemp_c +"°C";
+    nextMin[i].innerHTML=forecastData[i+1].day.mintemp_c + "°C";
     nextImg[i].setAttribute("src",forecastData[i+1].day.condition.icon);
     nextStatus[i].innerHTML=forecastData[i+1].day.condition.text;    
   }
